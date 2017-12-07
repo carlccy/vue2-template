@@ -149,11 +149,21 @@ html,body{
 .router-fade-enter, .router-fade-leave-active {
   opacity: 0;
 }
+
 .router-slid-enter-active, .router-slid-leave-active {
   transition: all .4s;
   will-change: transform,opacity;
 }
 .router-slid-enter, .router-slid-leave-active {
   transform: translate3d(2rem, 0, 0);
+  opacity: 0;
+}
+
+.router-slideUp-enter-active, .router-slideUp-leave-active {
+  transition: all .4s;
+  will-change: transform,opacity;
+}
+.router-slideUp-enter, .router-slideUp-leave-active {
+  transform: translate3d(0, 50%, 0);
   opacity: 0;
 }

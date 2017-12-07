@@ -1,12 +1,25 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import mutations from './mutations'
+import actions from './action'
+import getters from './getters'
 
 Vue.use(Vuex)
 
 const state = {
-  login: false // 是否登录
+  latitude: '', // 当前位置纬度
+  longitude: '', // 当前位置经度
+  userInfo: null, // 用户信息
+  choosedAddress: null, // 选择地址
+  addressIndex: null, // 选择地址的索引值
+  login: false, // 是否登录
+  token: '', // 是否登录
+  uid: '' // 是否登录
 }
 
 export default new Vuex.Store({
-  state
+  state,
+  getters,
+  actions,
+  mutations
 })
