@@ -10,7 +10,7 @@ vue init webpack vue2-test1
 cd vue2-test1
 cnpm install
 
-cnpm install vuex -S
+cnpm install vuex axios -S
 
 cnpm install node-sass sass-loader -D
 
