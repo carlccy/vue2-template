@@ -1,6 +1,6 @@
-# vue2-test1
+# vue2-template
 
-> a vue2 template
+> Vue2 + Router + Vuex + axios + Flex + Sass + Webpack
 
 ## Build Setup
 ``` cc
