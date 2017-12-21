@@ -29,8 +29,13 @@ export default {
     state.login = true
     state.token = info.token
     state.uid = info.uid
-    setStore('token', info.token)
-    setStore('uid', info.uid)
+    // 保存在localStorage中，一直保存着登录信息，使用自定义方法可以设置过期时间 或者 outLogin退出
+    // 如果只存在vuex中，刷新就没了
+    // 如果存在sessionStorage中，刷新还在，关闭就没了
+    // 如果存在cookie中，刷新关闭都还在，可以设置过期时间
+    // 如果存在IndexedDB中，刷新关闭都还在
+    /* setStore('token', info.token) 
+    setStore('uid', info.uid) */
   },
   // 获取用户信息存入vuex （这个方法一般放在每个页面都调用的组件中）
   [GET_USERINFO] (state, info) {
@@ -48,8 +53,8 @@ export default {
   },
   // 获取登录信息存入vuex
   [GET_TOKEN] (state) {
-    state.token = getStore('token') || ''
-    state.uid = getStore('uid') || ''
+    state.token = getStore('token') || state.token
+    state.uid = getStore('uid') || state.uid
   },
   // 修改用户名
   [RETSET_NAME] (state, username) {

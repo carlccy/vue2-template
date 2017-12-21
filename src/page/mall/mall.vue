@@ -4,17 +4,17 @@
     <main>
       <h1>{{msg}} mall</h1>
         <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 1</section>
-        <section class="mall-item">商品 2</section>
-        <section class="mall-item">商品 3</section>
-        <section class="mall-item">商品 4</section>
-        <section class="mall-item">商品 5</section>
-        <section class="mall-item">商品 6</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 2</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 3</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 4</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 5</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 6</section>
         <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 1</section>
-        <section class="mall-item">商品 2</section>
-        <section class="mall-item">商品 3</section>
-        <section class="mall-item">商品 4</section>
-        <section class="mall-item">商品 5</section>
-        <section class="mall-item">商品 6</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 2</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 3</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 4</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 5</section>
+        <section class="mall-item" @click="gotoGoods({path: '/goods'})">商品 6</section>
     </main>
     <foot-guide slot="footer"></foot-guide>
   </layout>
